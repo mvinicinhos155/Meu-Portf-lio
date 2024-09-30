@@ -114,10 +114,10 @@ header a:hover {
 header .listage ul {
     list-style-type: none;   
     display: flex;
+    gap: 90px;
 }
 
 header .listage ul li {
-    padding: 60px;
     font-size: 20px;
 }
 
