@@ -1,0 +1,789 @@
+@keyframes leftmot {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightmot {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        
+        opacity: 1;
+         transform: translateX(0 0);
+        
+    }
+}
+
+@keyframes appearrigth {
+    0% {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+
+    100% {
+        
+        opacity: 1;
+         transform: translateX(0 0);
+        
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+
+#title {
+    text-align: center;
+    color: #eee9e9;
+    font-size: 50px;
+    border-bottom: solid 1px black;
+}
+
+#title span {
+    color: #0097B2;
+}
+
+#hb {
+    color: #fff;
+}
+header {
+    padding: 40px 4%;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+}
+
+
+header a {
+    color: rgb(95, 94, 94);
+    text-decoration: none;
+    transition: all 0.7s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.10);
+}
+
+
+header .listage ul {
+    list-style-type: none;   
+}
+
+header .listage ul li {
+    display: inline-block;
+    padding: 60px;
+    font-size: 20px;
+    
+}
+
+header .btn button {
+    padding: 20px 40px;
+    font-size: 23px;
+    border: none;
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+    animation-name: rightmot;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    border-radius: 20px;
+    box-shadow: 9px 2px 17px 0px rgba(129, 128, 128, 0.75);
+    background-color: #0097B2;
+    cursor: pointer;
+}
+
+header .btn button:hover {
+    transform: translateY(-10px);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid #3f3f3f;
+    color: black;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 04px 6%;
+}
+
+main section .left {
+    padding: 60px;
+    
+}
+
+main section .left h1 {
+    color: #fff;
+    font-size: 70px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.5s;
+    animation-name: leftmot;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+main section .left h1:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+ }
+
+main section .left h2 {
+    color: #3f3f3f;
+    font-size: 50px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.5s;
+    animation-name: leftmot;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+main section .left h2:hover{
+    cursor: pointer;
+   transform: scale(1.07);
+}
+
+main section .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -50px;
+}
+
+
+main section .right img {
+    width: 500px;
+    transition: all 0.5s;
+    animation-name: rightmot;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+main section .right img:hover{
+    transform: scale(1.05);
+}
+
+main section .right h2 {
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation-name: rightmot;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+main section .right button {
+    width: 250px;
+    background-color: #0097B2;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 23px;
+    border: none;
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+    animation-name: rightmot;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    border-radius: 20px;
+    box-shadow: 9px 2px 17px 0px rgba(129, 128, 128, 0.75);
+}
+
+main section .right button:hover {
+    transform: translateY(-10px);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid #3f3f3f;
+    color: #fff;
+}
+/*fim da interface*/
+
+/*especialidade*/
+
+section .especialidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 40px;
+    width: 100%;
+    margin-top: 150px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex {
+   margin: 40px 4%;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 20px;
+
+}
+.front {
+    background-color: #000;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    border: 1px solid #3f3f3f;
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+.front:hover {
+    border: 1px solid #000000;
+    transform: scale(1.05);
+    box-shadow: 0px 2px 5px 7px rgba(175, 175, 175, 0.75);
+}
+
+.front h1 {
+    margin-top: 10px;
+}
+
+.front img {
+    border-radius: 8px;
+}
+
+#Tamanho {
+    width: 100px;
+}
+
+#Tamanhob {
+    width: 155px;
+}
+
+
+.back {
+    background-color: #000;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #3f3f3f;
+    animation: appearrigth 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+.back:hover {
+    border: 1px solid #000000;
+    transform: scale(1.05);
+    box-shadow: 0px 2px 5px 7px rgba(175, 175, 175, 0.75);
+}
+
+.back h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#node {
+    width: 100px;
+}
+
+/* fim da especialidade*/
+
+/*começo do sobre*/
+.sobre {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface {
+    display: flex;
+    padding: 30px 4%;  
+}
+
+.leftSobre{
+    padding: 40px 4%;
+    width: 650px;
+    height: 600px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+
+.leftSobre img {
+    width: 700px;
+    transition: all 1s;
+}
+
+.leftSobre img:hover {
+    transform: scale(1.03);
+}
+.rigthSobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    gap: 60px;
+    animation: appearrigth 1s ease-in-out;
+    animation-timeline: view();
+    animation-duration: 20s;
+    animation-range: cover 0% cover 50%;
+}
+
+.rigthSobre h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.rigthSobre span {
+    color: #38a9bd;
+    display: block;
+    
+}
+
+.rigthSobre img {
+    width: 40px;
+    transform: 0.5s ease-in-out;
+}
+
+.rigthSobre img:hover {
+    transform: translateY(-10px);
+}
+
+.rigthSobre p {
+    color: #fff;
+    line-height: 30px;
+}
+
+.rigthSobre a {
+    margin: 10px;
+    transition: all 1s;
+    display: inline-block;
+}
+
+.rigthSobre a:hover {
+    transform: scale(1.20);
+    
+}
+/*fim do sobre*/
+
+/*começo do projetos*/
+.postfólio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff11;
+}
+
+.postfólio .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 0 40px 10px #ffffff18;
+}
+
+#title2 {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+ #title2 span {
+    color: #0097B2;
+}
+
+
+
+.postfólio .flex {
+ gap: 60px;
+}
+
+.img-muve {
+    width: 700px;
+    height: 359px;
+    background-color: #0097B2;
+    background-size: cover;
+    background-position: 100% 0;
+    transition: 15s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-muve:hover {
+    background-position: 100% 100%;
+}
+
+.oveley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0fc4;
+    border-radius: 40px;
+    opacity: 1;
+    transition: 3s;
+}
+
+.oveley:hover {
+    opacity: 0;
+}
+/*fim do projetos*/
+
+/*começo do contatos*/
+.contatos{
+    padding: 80px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 17px 0px #ffffff18;
+}
+
+.contatos .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatos .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(92, 90, 90, 0.623);
+    border-radius: 40px;
+    transition: all 0.7s;
+}
+
+.contatos .flex:hover {
+    background-color: #5353530a;
+    transform: scale(1.05);
+}
+
+.contatospessoal {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.redesocial {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 60px;
+}
+
+.redesocial a {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.redesocial a img {
+    width: 50px;
+    transition: all 0.5s;
+}
+
+.redesocial a img:hover{
+    transform: scale(1.05);
+}
+
+.contatos .flex p {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contatos .flex p img {
+    width: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.redesocial p img:hover{
+    transform: scale(1.05);
+}
+/*fim do contatos*/
+
+.rodapé {
+    width: 100%;
+}
+
+.roimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roimg a img {
+    transition: all 0.8s;
+}
+
+.roimg a img:hover {
+    transform: scale(1.10);
+}
+
+@media (max-width: 720px) {
+
+    body {
+        box-shadow: none;
+    }
+
+
+    header .listage ul, header .btn button{
+    display: none;
+   }
+
+   main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+   }
+
+   main section .left h1 {
+    font-size: 50px;
+   }
+
+   main section .left h2 {
+    font-size: 50px;
+   }
+
+   .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .sobre .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .leftSobre img {
+    padding: 0;
+    width: 530px;
+   }
+
+   .rigthSobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .rigthSobre h1 {
+    font-size: 25px;
+   }
+
+   .img-muve {
+    width: 450px;
+    height: 230px;
+   }
+
+   .contatos .flex {
+    width: 400px;
+   }
+
+   .flex  h2{
+    font-size: 16px;
+   }
+
+   .redesocial {
+    gap: 1;
+   }
+
+   .redesocial a {
+    font-size: 12px;
+   }
+
+   .redesocial a img {
+    width: 30px;
+    padding-bottom: 10px;
+   }
+
+   .contatos .flex p {
+    font-size: 12px;
+   }
+
+   .contatos .flex p img {
+    width: 30px;
+    padding-bottom: 10px;
+   }
+}
+
+@media (max-width: 390px) {
+
+    body {
+        box-shadow: none;
+    }
+
+    header .interface {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+    }
+
+
+    header .listage ul, header .btn button{
+    display: none;
+   }
+
+   main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   main section .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   main section .left h1 {
+    font-size: 45px;
+   }
+
+   main section .left h2 {
+    font-size: 45px;
+   }
+
+  
+
+   .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .sobre .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .leftSobre img {
+    width: 230px;
+   }
+
+   .rigthSobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .rigthSobre h1 {
+    font-size: 25px;
+   }
+
+   .img-muve {
+    width: 450px;
+    height: 230px;
+   }
+
+   .contatos .flex {
+    width: 400px;
+   }
+
+   .flex  h2{
+    font-size: 16px;
+   }
+
+   .redesocial {
+    gap: 1;
+   }
+
+   .redesocial a {
+    font-size: 12px;
+   }
+
+   .redesocial a img {
+    width: 30px;
+    padding-bottom: 10px;
+   }
+
+   .contatos .flex p {
+    font-size: 12px;
+   }
+
+   .contatos .flex p img {
+    width: 30px;
+    padding-bottom: 10px;
+   }
+}
