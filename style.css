@@ -687,11 +687,13 @@ section .especialidade {
         box-shadow: none;
     }
 
+
     header .interface {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 371px;
+        text-align: center;
+        width: 450px;
     }
 
 
@@ -711,7 +713,7 @@ section .especialidade {
     width: 100%;
    }
    #inicio {
-    width: 370px;
+    width: 450px;
    }
 
    #inicio img {
@@ -736,7 +738,8 @@ section .especialidade {
    }
 
    #especialidade {
-    width: 390px;
+    width: 450px;
+
    }
 
    #especialidade h2 {
@@ -777,7 +780,7 @@ section .especialidade {
    }
 
    .sobre  {
-    width: 360px;
+    width: 450px;
     height: 900px;
    }
 
@@ -823,12 +826,20 @@ section .especialidade {
    }
 
    .postfólio {
-    width: 360px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .postfólio .interface {
+    width: 390px;
    }
 
    .postfólio #title2 {
     font-size: 30px;
    }
+
 
    .img-muve {
     width: 280px;
@@ -836,7 +847,7 @@ section .especialidade {
    }
 
    .contatos {
-    width: 360px;
+    width: 450px;
    }
 
 
@@ -891,11 +902,14 @@ section .especialidade {
    }
 
    .rodapé {
-    width: 360px;
-    height: 500px;
+    width: 450px;
+    height: 150px;
+    text-align: center;
    }
 
    .roimg {
-    width: 360px;
+    width: 450px;
+    height: 200px;
+    text-align: center;
    }
 }
